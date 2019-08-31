@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Prerequisites :door:
 
-You need to have any WordPress theme activated on your WordPress project, which has Advanced Custom Fields Plugin installed and activated.
+You need to have any WordPress theme activated on your WordPress project, which has [ACF Pro](https://www.advancedcustomfields.com/pro/) Plugin installed and activated.
 
 ## Installation :wrench:
 
@@ -16,6 +16,15 @@ You need to have any WordPress theme activated on your WordPress project, which 
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
 ## Use :ski:
+
+1. Add below fields after clicking on `Custom Fields` menu item on WordPress dashboard.
+- Name ( type: text )
+- Title ( type: text )
+- Photo ( type: image )
+- Description ( type: textarea )
+
+2. Add a new post and select the block called `Team Member'
+3. Add the values from the of the above custom fields using control panel on the right. 
 
 ## Contributing :busts_in_silhouette:
 
