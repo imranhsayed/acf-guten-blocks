@@ -25,6 +25,7 @@ You need to have any WordPress theme activated on your WordPress project, which 
 
 2. Add a new post and select the block called `Team Member'
 3. Add the values from the of the above custom fields using control panel on the right. 
+4. Now you will be able to see the content of your block template written in php inside the block.
 
 ## Contributing :busts_in_silhouette:
 
