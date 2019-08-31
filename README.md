@@ -1,4 +1,4 @@
-# ACF Blocks
+# ACF Guten Blocks
 
 > This plugin creates Gutenberg blocks using ACF
 
