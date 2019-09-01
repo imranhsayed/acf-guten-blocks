@@ -17,15 +17,23 @@ You need to have any WordPress theme activated on your WordPress project, which 
 
 ## Use :ski:
 
-1. Add below fields after clicking on `Custom Fields` menu item on WordPress dashboard.
-- Name ( type: text )
-- Title ( type: text )
-- Photo ( type: image )
-- Description ( type: textarea )
+1. Click on `Custom Fields` menu item on WordPress dashboard.
+2. Create a new Field group called  `Testimonial` and add below fields
+- Testimonial ( type: text )
+- Author ( type: text )
+- Role ( type: text )
+- Image ( type: image )
+- Background Color ( type: text )
+- Text Color ( type: text )
 
-2. Add a new post and select the block called `Team Member'
+![](editor-custom-field.png)
+
+2. Add a new post and select the block called `Testimonial`
 3. Add the values from the of the above custom fields using control panel on the right. 
 4. Now you will be able to see the content of your block template written in php inside the block.
+![](editor-block.png)
+
+You can also add the values of custom field by clicking on the inspector control edit icon, in the block. 
 
 ## Contributing :busts_in_silhouette:
 

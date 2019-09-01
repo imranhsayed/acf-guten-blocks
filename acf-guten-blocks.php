@@ -13,10 +13,9 @@
  *
  * @package ACF Guten Blocks
  */
+
 // Define Constants.
-define( 'ACFB_URI', plugins_url( 'rest-api-endpoints' ) );
-define( 'ACFB_TEMPLATE_PATH', plugin_dir_path( __FILE__ ) . 'templates/' );
-define( 'ACFB_PLUGIN_PATH', __FILE__ );
+define( 'ACFB_BLOCK_TEMPLATE_PATH', plugin_dir_path( __FILE__ ) . '/block-templates/' );
 
 // File Includes
 include_once 'inc/class-acfw-register-block.php';

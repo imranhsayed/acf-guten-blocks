@@ -25,18 +25,16 @@ class ACFW_Register_Block {
 			return;
 		}
 
-		acf_register_block_type( array(
-			'name'			=> 'team-member',
-			'title'			=> __( 'Team Member', 'clientname' ),
-			'category'		=> 'formatting',
-			'icon'			=> 'admin-users',
-			'mode'			=> 'auto',
-			'keywords'		=> array( 'profile', 'user', 'author' ),
-			'render_template'	=> 'block-templates/block-team-member.php',
-		));
+		// Register a testimonial block.
+		acf_register_block_type( [
+			'name'              => 'testimonial',
+			'title'             => __( 'Testimonial' ),
+			'description'       => __( 'A custom testimonial block.' ),
+			'render_template'   => ACFB_BLOCK_TEMPLATE_PATH . 'testimonial.php',
+			'category'          => 'formatting',
+		] );
 
 	}
-
 }
 
 new ACFW_Register_Block();
