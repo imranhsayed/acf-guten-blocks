@@ -12,33 +12,37 @@ if ( empty( $block['id'] ) ) {
 }
 
 // Create id attribute allowing for custom 'anchor' value.
-$id = sprintf( 'testimonial-%s', $block['id'] );
-
-if( ! empty( $block['anchor'] ) ) {
-	$id = $block['anchor'];
-}
+$id = ( ! empty( $block['anchor'] ) ) ?
+		$block['anchor'] :
+		sprintf( 'testimonial-%s', $block['id'] );
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'testimonial';
+$className = ( ! empty( $block['className'] ) ) ?
+			    sprintf( 'testimonial %s', $block['className'] ) :
+			    'testimonial';
 
-if( ! empty( $block['className'] ) ) {
-	$className .= sprintf( ' %s', $block['className'] );
-}
+$className = ( ! empty( $block['align'] ) ) ?
+			   sprintf( '%1$s align%2$s', $className, $block['align'] ) :
+	           $className;
 
-if( ! empty( $block['align'] ) ) {
-	$className .= sprintf( ' align%s', $block['align'] );
-}
 
 // Load values and assigning defaults.
 $text = get_field( 'testimonial' ) ?: 'Your testimonial here...';
+
 $author = get_field( 'author' ) ?: 'Author name';
+
 $role = get_field( 'role' ) ?: 'Author role';
+
 $image = get_field( 'image' ) ?: '';
+
 $background_color = get_field( 'background_color' );
+
 $text_color = get_field( 'text_color' );
 
 ?>
+
 	<div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $className ); ?>">
+
 		<blockquote class="testimonial-blockquote">
 			<span class="testimonial-text"><?php echo esc_html( $text ); ?></span>
 			<span class="testimonial-author"><?php echo esc_html( $author ); ?></span>
