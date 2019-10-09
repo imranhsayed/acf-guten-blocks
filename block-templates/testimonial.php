@@ -30,7 +30,9 @@ $text_color = get_field( 'text_color' );
 	<div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $className ); ?>">
 		<blockquote class="testimonial-blockquote">
 			<span class="testimonial-text"><?php echo esc_html( $text ); ?></span>
+			<br>
 			<span class="testimonial-author"><?php echo esc_html( $author ); ?></span>
+			<br>
 			<span class="testimonial-role"><?php echo esc_html( $role ); ?></span>
 		</blockquote>
 
